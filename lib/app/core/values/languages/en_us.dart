@@ -27,6 +27,8 @@ final Map<String, String> enUs = {
   'papaya': 'Papaya',
 
   //phases
+  'shoppingButtom': 'Add at the cart',
+
   'appleDescription':
       'The best apple of the zone and the best price from anywhere greengrocer. This item count with essencials vitamins for the corporal fortification, resulting in a healthy life.',
 

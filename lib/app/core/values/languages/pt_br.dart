@@ -27,6 +27,8 @@ final Map<String, String> ptBR = {
   'papaya': 'Mamão',
 
   //frases
+  'shoppingButtom': 'Add no carrinho',
+
   'appleDescription':
       'A melhor maçã da região e que conta com o melhor preço de qualquer quitanda. Este item conta com vitaminas essenciais para o fortalecimento corporal, resultando em uma vida saudável.',
 

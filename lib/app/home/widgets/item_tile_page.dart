@@ -3,6 +3,7 @@ import 'package:quitanda/app/core/utils/utils_services.dart';
 import 'package:quitanda/app/core/values/colors.dart';
 
 import 'package:quitanda/app/data/model/item_model.dart';
+import 'package:quitanda/app/products/products_page.dart';
 
 class ItemTilePage extends StatelessWidget {
   final ItemModel item;
@@ -17,49 +18,55 @@ class ItemTilePage extends StatelessWidget {
     return SafeArea(
         child: Stack(
       children: [
-        Card(
-          elevation: 1,
-          shadowColor: Colors.grey.shade300,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: Image.asset(item.imgUrl),
-                ),
-
-                //colocar texto a esquerda
-                Text(
-                  item.itemName,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (c) {
+              return ProductsPage(item: item);
+            }));
+          },
+          child: Card(
+            elevation: 1,
+            shadowColor: Colors.grey.shade300,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child:
+                        Hero(tag: item.imgUrl, child: Image.asset(item.imgUrl)),
                   ),
-                ),
-                Row(
-                  children: [
-                    Text(
-                      utilServices.priceToCurrency(item.price),
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: CustomColors.customSwatchColor,
-                      ),
+                  Text(
+                    item.itemName,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
                     ),
-                    Text(
-                      '/${item.unit}',
-                      style: TextStyle(
-                          color: Colors.grey.shade500,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        utilServices.priceToCurrency(item.price),
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 12),
-                    ),
-                  ],
-                )
-              ],
+                          fontSize: 20,
+                          color: CustomColors.customSwatchColor,
+                        ),
+                      ),
+                      Text(
+                        '/${item.unit}',
+                        style: TextStyle(
+                            color: Colors.grey.shade500,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ),
