@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 import 'package:quitanda/app/core/values/colors.dart';
@@ -6,11 +8,14 @@ class QuantityWidget extends StatelessWidget {
   final int value;
   final String suffixText;
   final Function(int quantity) result;
+  final bool isRemovable;
+
   const QuantityWidget({
     Key? key,
     required this.value,
     required this.suffixText,
     required this.result,
+    this.isRemovable = false,
   }) : super(key: key);
 
   @override
@@ -28,12 +33,13 @@ class QuantityWidget extends StatelessWidget {
                 blurRadius: 2,
               )
             ]),
-        child: Row(children: [
+        child: Row(mainAxisSize: MainAxisSize.min, children: [
           _quantityButtom(
-            icon: Icons.remove,
-            color: Colors.grey,
+            icon:
+                !isRemovable || value > 1 ? Icons.remove : Icons.delete_forever,
+            color: !isRemovable || value > 1 ? Colors.grey : Colors.red,
             onPressed: () {
-              if (value == 1) return;
+              if (value == 1 && !isRemovable) return;
               int resultCount = value - 1;
               result(resultCount);
             },

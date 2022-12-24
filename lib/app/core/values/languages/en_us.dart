@@ -25,8 +25,15 @@ final Map<String, String> enUs = {
   'guava': 'Guava',
   'mango': 'Mango',
   'papaya': 'Papaya',
+  'no': 'No',
+  'yes': 'Yes',
+  'confirm': 'Confirm',
 
   //phases
+  'concludeOrder': 'Complete order',
+
+  'concludeOrderConfirmation': 'Would you like to conclude order?',
+
   'shoppingButtom': 'Add at the cart',
 
   'appleDescription':

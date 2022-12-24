@@ -25,8 +25,15 @@ final Map<String, String> ptBR = {
   'guava': 'Goiaba',
   'mango': 'Manga',
   'papaya': 'Mamão',
+  'no': 'Não',
+  'yes': 'Sim',
+  'confirm': 'Confirmar',
 
   //frases
+  'concludeOrder': 'Concluir pedido',
+
+  'concludeOrderConfirmation': 'Deseja realmente concluir o pedido?',
+
   'shoppingButtom': 'Add no carrinho',
 
   'appleDescription':

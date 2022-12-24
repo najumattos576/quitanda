@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:quitanda/app/data/model/cart_item_model.dart';
 
 import '../data/model/item_model.dart';
 
@@ -60,11 +61,17 @@ List<ItemModel> items = [
 ];
 
 List<String> categories = [
-  'fruits',
-  'grains',
-  'greens',
-  'condiments',
-  'cereals',
+  'fruits'.tr,
+  'grains'.tr,
+  'greens'.tr,
+  'condiments'.tr,
+  'cereals'.tr,
+];
+
+List<CartItemModel> cartItems = [
+  CartItemModel(item: apple, quantity: 1),
+  CartItemModel(item: kiwi, quantity: 2),
+  CartItemModel(item: mango, quantity: 3),
 ];
 
 // Produtos.txt

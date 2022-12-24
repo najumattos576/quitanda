@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quitanda/app/cart/cart_tab_page.dart';
 import 'package:quitanda/app/home/home_tab_page.dart';
+
+import '../profile/profile_tab_page.dart';
 
 class BasePage extends StatefulWidget {
   const BasePage({Key? key}) : super(key: key);
@@ -22,9 +25,9 @@ class _BasePageState extends State<BasePage> {
           controller: baseController,
           children: [
             const HomeTab(),
-            Container(color: Colors.green),
-            Container(color: Colors.blue),
+            const CartTab(),
             Container(color: Colors.yellow),
+            const ProfileTab(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
