@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
 import 'package:quitanda/app/data/model/cart_item_model.dart';
+import 'package:quitanda/app/data/model/user_model.dart';
 
 import '../data/model/item_model.dart';
+import '../data/model/order_model.dart';
 
 ItemModel apple = ItemModel(
   imgUrl: 'assets/fruits/apple.png',
@@ -72,6 +74,24 @@ List<CartItemModel> cartItems = [
   CartItemModel(item: apple, quantity: 1),
   CartItemModel(item: kiwi, quantity: 2),
   CartItemModel(item: mango, quantity: 3),
+];
+
+UserModel user = UserModel(
+    name: 'Ana Julia',
+    email: 'ana@email',
+    phone: '9 9999-9999',
+    cpf: '999.999.999-99',
+    password: 'senha');
+
+List<OrderModel> orders = [
+  OrderModel(
+      id: 'asd6a54da6s2d1',
+      createdDateTime: DateTime.parse('2022-24-12 20:25:01.458'),
+      overdueDateTime: DateTime.parse('2022-24-12 21:25:01.458'),
+      items: [CartItemModel(item: apple, quantity: 2)],
+      status: 'pending_payment',
+      copyAndPaste: 'q1w2e3r4t5y6',
+      total: 11.0),
 ];
 
 // Produtos.txt

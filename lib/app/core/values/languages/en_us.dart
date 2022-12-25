@@ -28,8 +28,18 @@ final Map<String, String> enUs = {
   'no': 'No',
   'yes': 'Yes',
   'confirm': 'Confirm',
+  'upgrade': 'Atualizar',
 
   //phases
+
+  'currentPassword': 'Current password',
+
+  'passwordUpgrade': 'Password upgrade',
+
+  'newPassword': 'New password',
+
+  'confirmNewPassword': 'Confirm new password',
+
   'concludeOrder': 'Complete order',
 
   'concludeOrderConfirmation': 'Would you like to conclude order?',

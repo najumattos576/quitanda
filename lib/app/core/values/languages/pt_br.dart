@@ -28,8 +28,17 @@ final Map<String, String> ptBR = {
   'no': 'Não',
   'yes': 'Sim',
   'confirm': 'Confirmar',
+  'upgrade': 'Atualizar',
 
   //frases
+  'currentPassword': 'Senha atual',
+
+  'newPassword': 'Nova senha',
+
+  'confirmNewPassword': 'Confirmar nova senha',
+
+  'passwordUpgrade': 'Atualizar senha',
+
   'concludeOrder': 'Concluir pedido',
 
   'concludeOrderConfirmation': 'Deseja realmente concluir o pedido?',

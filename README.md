@@ -16,6 +16,12 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-Desafios:
+DESAFIOS:
 1 - Implementar a opção de idioma pt<->in adicionando um botao ao lado do botao de logout para abrir um dialog de seleção do idioma;
 2 - Transformar o dialog de confirmação da tela cart_tab.page em um widget e colocar um dialog para confirmar exclusao do item do carrinho;
+3 - Adicionar mascaras aos campos do perfil do usuario;
+4 - Mudar o formato da data
+
+ESTUDAR:
+1 - O que é contexto?
+2 - Quando usar/não usar safe area?
