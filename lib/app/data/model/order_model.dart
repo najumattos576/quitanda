@@ -1,4 +1,3 @@
-import 'package:quitanda/app/config/app_data.dart';
 import 'package:quitanda/app/data/model/cart_item_model.dart';
 
 class OrderModel {

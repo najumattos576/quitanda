@@ -20,8 +20,12 @@ DESAFIOS:
 1 - Implementar a opção de idioma pt<->in adicionando um botao ao lado do botao de logout para abrir um dialog de seleção do idioma;
 2 - Transformar o dialog de confirmação da tela cart_tab.page em um widget e colocar um dialog para confirmar exclusao do item do carrinho;
 3 - Adicionar mascaras aos campos do perfil do usuario;
-4 - Mudar o formato da data
+4 - Mudar o formato da data;
+5 - Colocar icone do app;
 
 ESTUDAR:
 1 - O que é contexto?
 2 - Quando usar/não usar safe area?
+3 - Qual a Diferença entre Stateless e Statefull?
+4 - O que é Map?
+5 - Quais os tipos de widget?

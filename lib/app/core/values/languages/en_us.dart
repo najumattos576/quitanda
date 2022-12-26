@@ -28,9 +28,26 @@ final Map<String, String> enUs = {
   'no': 'No',
   'yes': 'Yes',
   'confirm': 'Confirm',
-  'upgrade': 'Atualizar',
+  'upgrade': 'Upgrade',
+  'search': 'Search',
+  'orders': 'Orders',
+  'payment': 'Payment',
+  'preparing': 'Preparing',
+  'sent': 'Sent',
+  'delivered': 'Delivered',
+  'order': 'Order',
 
   //phases
+
+  'paymentWithPix': 'Payment with Pix',
+
+  'confirmedOrder': 'Confirmed order',
+
+  'reversedPix': 'Reversed Pix',
+
+  'pixPaymentDue': 'Pix payment due',
+
+  'copyPixKey': 'Copy Pix key',
 
   'currentPassword': 'Current password',
 

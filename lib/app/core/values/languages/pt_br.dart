@@ -29,8 +29,26 @@ final Map<String, String> ptBR = {
   'yes': 'Sim',
   'confirm': 'Confirmar',
   'upgrade': 'Atualizar',
+  'search': 'Pesquisar',
+  'orders': 'Pedidos',
+  'payment': 'Pagamento',
+  'preparing': 'Preparando',
+  'sent': 'Envio',
+  'delivered': 'Enviado',
+  'order': 'Pedido',
 
   //frases
+
+  'paymentWithPix': 'Pagamento com pix',
+
+  'confirmedOrder': 'Pedido confirmado',
+
+  'reversedPix': 'Pix estornado',
+
+  'pixPaymentDue': 'Pagamento Pix vencido',
+
+  'copyPixKey': 'Copiar chave Pix',
+
   'currentPassword': 'Senha atual',
 
   'newPassword': 'Nova senha',

@@ -6,6 +6,8 @@ import 'package:quitanda/app/core/values/colors.dart';
 import 'package:quitanda/app/config/app_data.dart' as app_data;
 import 'package:quitanda/app/data/model/cart_item_model.dart';
 
+import '../global/payment_dialog.dart';
+
 class CartTab extends StatefulWidget {
   const CartTab({Key? key}) : super(key: key);
 
@@ -89,7 +91,15 @@ class _CartTabState extends State<CartTab> {
                             )),
                         onPressed: () async {
                           bool? result = await showOrderConfirmation();
-                          print(result);
+                          if (result ?? false) {
+                            showDialog(
+                                context: context,
+                                builder: (_) {
+                                  return PaymentDialog(
+                                    order: app_data.orders.first,
+                                  );
+                                });
+                          }
                         },
                         child: Text(
                           'concludeOrder'.tr,
