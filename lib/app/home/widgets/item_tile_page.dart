@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+
 import 'package:quitanda/app/core/utils/utils_services.dart';
 import 'package:quitanda/app/core/values/colors.dart';
-
 import 'package:quitanda/app/data/model/item_model.dart';
 import 'package:quitanda/app/products/products_page.dart';
 
 class ItemTilePage extends StatelessWidget {
   final ItemModel item;
+  final void Function(GlobalKey) cartAnimationMethod;
+  final GlobalKey imageGk = GlobalKey();
+
   ItemTilePage({
     Key? key,
     required this.item,
+    required this.cartAnimationMethod,
   }) : super(key: key);
 
   final UtilServices utilServices = UtilServices();
@@ -36,8 +40,12 @@ class ItemTilePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Expanded(
-                    child:
-                        Hero(tag: item.imgUrl, child: Image.asset(item.imgUrl)),
+                    child: Hero(
+                        tag: item.imgUrl,
+                        child: Image.asset(
+                          item.imgUrl,
+                          key: imageGk,
+                        )),
                   ),
                   Text(
                     item.itemName,
@@ -74,7 +82,9 @@ class ItemTilePage extends StatelessWidget {
             top: 4,
             right: 4,
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                cartAnimationMethod(imageGk);
+              },
               child: Container(
                   height: 40,
                   width: 35,

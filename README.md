@@ -22,6 +22,7 @@ DESAFIOS:
 3 - Adicionar mascaras aos campos do perfil do usuario;
 4 - Mudar o formato da data;
 5 - Colocar icone do app;
+6 - Arrumar o tamanho da animação da tela de login
 
 ESTUDAR:
 1 - O que é contexto?
