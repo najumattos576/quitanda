@@ -4,6 +4,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quitanda/app/config/app_data.dart' as app_data;
+import 'package:quitanda/app/core/utils/utils_services.dart';
 import 'package:quitanda/app/core/values/colors.dart';
 import 'package:quitanda/app/home/widgets/category_tile_page.dart';
 import 'package:quitanda/app/home/widgets/item_tile_page.dart';
@@ -24,6 +25,8 @@ class _HomeTabState extends State<HomeTab> {
   void itemSelectedCartAnimation(GlobalKey gkImage) {
     runAddToCardAnimation(gkImage);
   }
+
+  final UtilServices utilServices = UtilServices();
 
   @override
   Widget build(BuildContext context) {
