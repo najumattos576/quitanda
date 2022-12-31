@@ -21,6 +21,7 @@ DESAFIOS:
 2 - Transformar o dialog de confirmação da tela cart_tab.page em um widget e colocar um dialog para confirmar exclusao do item do carrinho;
 3 - Adicionar mascaras aos campos do perfil do usuario;
 4 - Arrumar o tamanho da animação da tela de login
+5 Trocar teclado para teclado numerico
 
 ESTUDAR:
 *OBS: Estudar também lógica de programação em dart*
@@ -30,3 +31,5 @@ ESTUDAR:
 4 - O que é Map?
 5 - Quais os tipos de widget?
 6 - O que é feature?
+7 - O que é o pacote material?
+8 - Quando usar , ou ; ?
